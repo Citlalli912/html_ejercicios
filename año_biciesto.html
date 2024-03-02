@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        text-align: center;
+      }
+    </style>
+
+</head>
+<body>
+    <div id="resultado"></div>
+    <script>
+      do {
+       var n1 = prompt("Ingresa un año");
+        if(isNaN(n1)){
+          alert('Por favor, ingresa un número válido');
+        }
+      } while (isNaN(n1));
+      n1 = parseInt(n1);
+      if(n1 % 4 === 0 && n1 % 100 !== 0 || n1 % 400 === 0){
+        document.getElementById('resultado').textContent = 'El año '+n1+' es año bisiesto ';
+      }else{
+        document.getElementById('resultado').textContent = 'El año '+n1+' no es año bisiesto ';
+      }
+    </script>
+</body>
+</html>

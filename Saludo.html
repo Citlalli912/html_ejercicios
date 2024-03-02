@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saludos! :D</title>
+    <style>
+        .function{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Ingresa un nombre: </label>
+        <input type="text" id="nombre">
+        <br> <br>
+              
+        <input type="button" value="Enviar" id="enviar"
+        onclick="capturarnombre()">
+    </form>
+    <div id="mostrarNombre"></div>
+
+    <script>
+        function capturarnombre(){
+            let nombre=document.getElementById("nombre").value           
+            document.getElementById("mostrarNombre"). 
+            innerHTML="<h1>Hola! "+nombre+", un gusto verte por aqui ;)"+"</h1>" 
+            console.log(nombre)
+
+        }
+    </script>   
+</body>
+</html>
